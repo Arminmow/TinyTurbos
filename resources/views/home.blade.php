@@ -2,7 +2,6 @@
 
 @section('content')
     @if(Auth::check())
-        Welcome User
+        Welcome {{ Auth::user()->username }}
     @endif
-    HOME
 @stop
