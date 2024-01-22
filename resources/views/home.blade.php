@@ -1,5 +1,5 @@
 @extends('partials.default')
 
 @section('content')
-    test
+    HOME
 @stop

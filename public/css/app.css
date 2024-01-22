@@ -34,3 +34,36 @@ body {
 }
 
 
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+    color: #8B0000; /* Dark Red */
+    text-align: center;
+}
+
+.form-group label {
+    color: #8B0000; /* Dark Red */
+}
+
+.form-control {
+    border-color: #F9BF3B; /* Dark Yellow */
+}
+
+.btn-signup {
+    background-color: #8B0000; /* Dark Red */
+    color: #ffffff; /* White */
+}
+
+.btn-signup:hover {
+    background-color: #F9BF3B; /* Dark Yellow on hover */
+}
+
+

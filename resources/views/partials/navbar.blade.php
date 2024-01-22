@@ -21,10 +21,10 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link sign-in-up" href="#">Sign In</a>
+                    <a class="nav-link sign-in-up" href="{{ route('auth.signin') }}">Sign In</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sign-in-up" href="#">Sign Up</a>
+                    <a class="nav-link sign-in-up" href="{{ route('auth.signup') }}">Sign Up</a>
                 </li>
             </ul>
         </div>

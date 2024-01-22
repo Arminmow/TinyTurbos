@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+// Sign up
+Route::get('/signup',[
+    'uses' => '\App\Http\Controllers\AuthController@getSignup',
+    'as' => 'auth.signup'
+]);
+
+// Sign in
+Route::get('/signin',[
+    'uses' => '\App\Http\Controllers\AuthController@getSignin',
+    'as' => 'auth.signin'
+]);
