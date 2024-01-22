@@ -1,0 +1,36 @@
+@import url('variables/redAndYellowCollors.css');
+
+body {
+    background-color: var(--background-color);
+}
+
+/* ----------------------- navbar -------------------------------------*/
+
+.navbar-custom {
+    background-color: #8B0000; /* Dark Red */
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.navbar-custom .navbar-brand {
+    color: #F9BF3B; /* Dark Yellow */
+    font-weight: bold;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #F9BF3B; /* Dark Yellow on hover */
+}
+.navbar-custom .navbar-toggler-icon {
+    background-color: white;
+}
+.navbar-custom .navbar-toggler {
+    border-color: white;
+}
+/* Sign-in and Sign-up Styles */
+.navbar-custom .sign-in-up {
+    color: white;
+    font-weight: bold;
+}
+
+
