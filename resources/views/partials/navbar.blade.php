@@ -15,9 +15,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                @if(Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('auth.signout') }}">Sign out</a>
+                    </li>
+                @endif
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">

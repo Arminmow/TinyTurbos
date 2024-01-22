@@ -30,8 +30,6 @@ class AuthController extends Controller
 
         $user->save();
 
-        Auth::login($user);
-
         return redirect()->route('home');
 
     }
@@ -39,5 +37,29 @@ class AuthController extends Controller
     public function getSignin()
     {
         return view('auth.signin');
+    }
+
+    public function postSignin(Request $request)
+    {
+
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)){
+            return redirect()->route('home');
+        }else{
+            dd('ridi');
+        }
+    }
+
+    public function signout()
+    {
+        Auth::logout();
+
+        return redirect()->route('home');
     }
 }
