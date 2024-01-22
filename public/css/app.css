@@ -66,3 +66,51 @@ body {
     background-color: #F9BF3B; /* Dark Yellow on hover */
 }
 
+
+
+/* Cards */
+
+card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: contain;
+    width: 100%;
+    height: 200px; /* Set a fixed height or adjust as needed */
+    padding: 30px;
+}
+
+.card-body {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #8B0000; /* Dark Red */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    color: #8B0000; /* Dark Red */
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.btn-details {
+    background-color: #8B0000; /* Dark Red */
+    color: #ffffff; /* White */
+}
+
+.btn-details:hover {
+    background-color: #F9BF3B; /* Dark Yellow on hover */
+}
