@@ -13,7 +13,7 @@
                     <a class="nav-link" href="#">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="{{ route('product.add') }}">Add Product</a>
                 </li>
                 @if(Auth::check())
                     <li class="nav-item">

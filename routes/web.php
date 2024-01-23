@@ -42,3 +42,13 @@ Route::get('/signout',[
     'uses' => '\App\Http\Controllers\AuthController@signout',
     'as' => 'auth.signout'
 ]);
+
+// Add Product
+Route::get('/addProduct',[
+    'uses' => '\App\Http\Controllers\HomeController@getAddProduct',
+    'as' => 'product.add'
+]);
+
+Route::post('/addProduct',[
+    'uses' => '\App\Http\Controllers\HomeController@postAddProduct',
+]);
